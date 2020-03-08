@@ -1,5 +1,5 @@
 # Set your full path to application.
-app_path = "/home/e621/e621ng"
+app_path = "/home/danbooru/e621ng"
 
 # Set unicorn options
 worker_processes 15
@@ -9,7 +9,7 @@ timeout 180
 listen "#{app_path}/tmp/.unicorn.sock", :backlog => 512
 
 # Spawn unicorn master worker for user apps (group: apps)
-user 'e621', 'e621'
+user 'danbooru', 'danbooru'
 
 # Fill path to your app
 working_directory app_path
